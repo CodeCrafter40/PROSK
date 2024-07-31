@@ -129,6 +129,13 @@ My work on Prosk significantly enhanced the app's functionality and user experie
 - **Personal Health Records:**  
   Allowed patients to easily access and manage their health records, lab results, and treatment plans.
 
+## Snapshots
+
+![Prosk Web Admin](https://github.com/user-attachments/assets/291d6338-8c0b-45e8-b0d4-7cba873fc13a)
+![Prosk Web Provider Dashboard](https://github.com/user-attachments/assets/09efca44-8887-4065-bbca-39a65c5cf4c6)
+![Prosk Patient Web Portal](https://github.com/user-attachments/assets/5364de35-ff81-4d88-881a-ebff5c1cbbad)
+
+
 ## Conclusion
 
 Prosk is a transformative patient care app that improves healthcare interactions with features for both patients and physicians, such as appointment scheduling and medical history management. My contributions as a developer included implementing key functionalities, ensuring data security, and integrating third-party APIs. The app enhances patient satisfaction and physician efficiency, demonstrating the potential of technology to revolutionize healthcare.
