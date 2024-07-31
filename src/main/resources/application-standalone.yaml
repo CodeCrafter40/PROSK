@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: "MORE Data Gateway (Standalone)"
+
+
+  flyway:
+    enabled: true
