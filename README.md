@@ -1,36 +1,136 @@
-# MORE Data Gateway
+# Prosk Patient Care App
 
-* [Architecture Decision Records](docs/adr)
+**Enhancing Patient and Physician Interactions**
 
-## Development Setup
+## Description
 
-The Data Gateway is tightly coupled to [Studymanager Backend][SM-Backend]. For local development
-there are two modes: _Combined_ and _Standalone_, where the first is recommended.
+Prosk is a comprehensive patient care application designed to streamline communication and data management between patients and physicians. This app leverages modern technology to improve healthcare delivery efficiency and patient satisfaction.
 
-### Combined Setup
+## What the Product is All About? The Key Features and Stuff:
 
-For the combined setup, first run the [development setup for the Studymanager Backend][SM-Backend-Setup].
-Make sure to start the Studymanager Backend at least once, as this will initialize the database and all other required
-services.
+Prosk offers a wide range of features tailored for both patients and physicians, facilitating seamless interactions, efficient data management, and easy access to essential health information.
 
-Keep the `docker-compose.yaml` of the Studymanager running, then you can start the Data Gateway locally. The default
-settings in the `application.yaml` are prepared to work with these services.
+### Key Features
 
-### Standalone Setup
+#### Patient Portal
 
-The repository contains a `docker-compose.yaml` that can be used to launch the required services
-for local development:
+- **Survey:**  
+  Patients can fill out health surveys to provide valuable information to their healthcare providers.
 
-```shell
-docker compose up -d
-```
+- **Medical History:**  
+  Comprehensive records of patients' medical histories are maintained for reference and analysis.
 
-After that, you need to start the Data Gateway using the `standalone` spring-profile to initialize the database.
+- **Primary Care Physicians:**  
+  Patients can view and select their primary care physicians.
 
-The default settings in the `application.yaml` are set to use these local services. Please note that these services bind
-to the same ports as those for the Studymanager Backend, so running both at the same time will lead to conflicts.
+- **Medication:**  
+  A detailed list of prescribed medications, dosages, and schedules.
 
+- **Personal Info:**  
+  Secure storage and management of personal information.
 
-[SM-Backend]: https://github.com/MORE-Platform/more-studymanager-backend
+- **ID Card and Insurance Card Info:**  
+  Easy access to ID and insurance card details for quick verification and claims processing.
 
-[SM-Backend-Setup]: https://github.com/MORE-Platform/more-studymanager-backend#development-setup
+- **Clinic Selection:**  
+  Patients can choose from a list of clinics for their appointments.
+
+- **Physician Selection:**  
+  Options to select and book appointments with preferred physicians.
+
+- **Problem Area:**  
+  Patients can specify their health concerns or problem areas for targeted consultations.
+
+#### Physicians Portal
+
+- **Appointments:**  
+  Manage appointments with statuses such as Pending, In-progress, and Completed.
+
+- **Pre-defined AVS and Consultation Templates:**  
+  Utilize pre-defined After Visit Summary (AVS) and consultation templates to save time and ensure consistency.
+
+- **Patient Document View Access:**  
+  Access and review patient documents securely.
+
+- **AVS and Consultation Report:**  
+  Generate and view detailed AVS and consultation reports for patient follow-ups and records.
+
+## Integrations and Tech Stack
+
+### Technologies Used
+
+- **Backend:** Java EE
+- **Frontend:** ReactJS
+- **Database:** MySQL
+- **Mobile App:** Flutter
+
+### Integrations
+
+- **CareCloud Integration:**  
+  CareCloud provides leading healthcare solutions such as RCM, cloud-based EHR, medical billing, practice management, and telehealth.
+
+- **Twilio SMS and Video Calling**
+
+- **Firebase Messaging and Notification**
+
+## My Contributions
+
+As a developer, my contributions to Prosk included:
+
+- **Designing and implementing the patient and physician portals:**  
+  Ensuring an intuitive user experience.
+
+- **Developing and integrating features:**  
+  Such as surveys, medical history, and appointment management.
+
+- **Implementing secure data storage:**  
+  Managing personal information, ID, and insurance card details.
+
+- **Creating pre-defined AVS and consultation templates:**  
+  For efficient physician use.
+
+- **Integrating third-party APIs and healthcare systems:**  
+  Enhancing the app's functionality.
+
+- **Conducting thorough testing and debugging:**  
+  Ensuring smooth and reliable app performance.
+
+## The Impact that I Created as a Developer
+
+My work on Prosk significantly enhanced the app's functionality and user experience, leading to:
+
+- **Improved Patient Satisfaction:**  
+  Patients experienced streamlined appointment scheduling, easy access to their health records, and better communication with their physicians.
+
+- **Increased Efficiency for Physicians:**  
+  Physicians benefited from pre-defined templates, easy access to patient documents, and efficient appointment management, allowing them to focus more on patient care.
+
+- **Enhanced Data Security:**  
+  Implementation of robust authentication and data storage mechanisms ensured patient information was securely managed, building trust among users.
+
+- **Better Healthcare Delivery:**  
+  The overall integration of various features and seamless data flow improved the quality and efficiency of healthcare services provided through the app.
+
+- **Appointment Scheduling:**  
+  Simplified the scheduling process with an integrated calendar system, reducing no-shows and optimizing clinic operations.
+
+- **Electronic Health Records (EHR):**  
+  Streamlined the management of patient records, making it easier to update, retrieve, and share information.
+
+- **Resource Management:**  
+  Optimized the use of medical resources, staff, and facilities based on patient load and demand patterns.
+
+- **Paperless Records:**  
+  Promoted sustainability by reducing the reliance on paper records and transitioning to digital health records.
+
+- **Outcome Tracking:**  
+  Tracked patient outcomes and treatment efficacy to continually improve care quality.
+
+- **Personal Health Records:**  
+  Allowed patients to easily access and manage their health records, lab results, and treatment plans.
+
+## Conclusion
+
+Prosk is a transformative patient care app that improves healthcare interactions with features for both patients and physicians, such as appointment scheduling and medical history management. My contributions as a developer included implementing key functionalities, ensuring data security, and integrating third-party APIs. The app enhances patient satisfaction and physician efficiency, demonstrating the potential of technology to revolutionize healthcare.
+
+---
